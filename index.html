@@ -10,17 +10,21 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-  .image-container {
+  .media-container {
     display: flex;
-    gap: 20px; /* Space between images */
-    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between videos/images */
+    justify-content: center; /* Center the videos/images */
   }
-  .image-container figure {
+  .media-container figure {
     text-align: center; /* Center-align captions */
   }
-  .image-container img {
-    width: 300px; /* Resize images to same width */
-    height: 200px; /* Set a fixed height for uniformity */
+  .media-container video {
+    width: 800px; /* Resize videos to the same width */
+    height: 500px; /* Set a fixed height for uniformity */
+  }
+  .media-container img {
+    width: 600px; /* Resize images to same width */
+    height: 400px; /* Set a fixed height for uniformity */
     object-fit: cover; /* Ensures images maintain aspect ratio within the size */
   }
 </style>
@@ -31,7 +35,7 @@
 <p>This website documents my project progress.</p>
 
 <h2>Project Images</h2>
-<div class="image-container">
+<div class="media-container">
   <figure>
     <img src="blinkSS.jpeg" alt="First Project Diagram">
     <figcaption>Figure 1: Blinking example</figcaption>
@@ -41,21 +45,23 @@
     <figcaption>Figure 2: Full setup</figcaption>
   </figure>
 </div>
-  
+
 <h2>Project Videos</h2>
-  <video controls width="600">
-<source src="rr.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-  
+<div class="media-container">
+  <figure>
+    <video controls>
+      <source src="blinking.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>LED Blinking example</figcaption>
+  </figure>
+</div>
+
 <h2>Updates</h2>
 <ul id="updates">
   <li>Week 11: Initial setup completed!!</li>
   <li>Week 2: Designed the initial layout.</li>
   <li>Week 3: Added image and video examples.</li>
 </ul>
-
-
 </body>
 </html>
-
