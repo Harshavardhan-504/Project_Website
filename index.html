@@ -7,13 +7,26 @@
 <link rel="stylesheet" href="style.css">
 <style>
   body {
-    margin-left: 20px; /* Adds space on the left side */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .image-container {
+    display: flex;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images */
+  }
+  .image-container figure {
+    text-align: center; /* Center-align captions */
+  }
+  .image-container img {
+    width: 300px; /* Resize images to same width */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures images maintain aspect ratio within the size */
   }
 </style>
 </head>
 <body>
 <h1>Welcome to Harsha's Project Website - Lab 1</h1>
-<img src="soc.jpg" alt="Project Diagram" width="300">
 <video controls width="600">
 <source src="rr.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -25,5 +38,18 @@ Your browser does not support the video tag.
   <li>Week 2: Designed the initial layout.</li>
   <li>Week 3: Added image and video examples.</li>
 </ul>
+
+<h2>Project Images</h2>
+<div class="image-container">
+  <figure>
+    <img src="blinkSS.jpeg" alt="First Project Diagram">
+    <figcaption>Figure 1: First Project Diagram</figcaption>
+  </figure>
+  <figure>
+    <img src="fullsetupSS.jpeg" alt="Second Project Diagram">
+    <figcaption>Figure 2: Second Project Diagram</figcaption>
+  </figure>
+</div>
 </body>
 </html>
+
