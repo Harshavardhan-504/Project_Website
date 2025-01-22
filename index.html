@@ -6,7 +6,7 @@
 <title>My Project</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  body {
+ body {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -31,9 +31,10 @@
 .media-container img {
   width: 100%; /* Resize images to fit the grid container */
   max-width: 600px; /* Max width for images */
-  height: 400px; /* Set a fixed height for uniformity */
-  object-fit: cover; /* Ensures images maintain aspect ratio within the size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
 }
+
 </style>
 </head>
 <body>
